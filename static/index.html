@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>龙须地图。。。</title>
+  <title>龙须地图正在运行~~~~~</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://unpkg.com/openlayers@4.6.4/dist/ol.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
@@ -26,11 +26,6 @@
 	font-size: medium;
 	font-weight: bold;
 }
-.STYLE5 {
-	color: #FF0000;
-	font-weight: bold;
-	font-family: "宋体";
-}
 -->
   </style>
 </head>
@@ -39,21 +34,15 @@
   <div id="app">
     <div class="sidenav" id="navBox" style="display:none;">
       <section class="section">
-        <h1 class="title STYLE4">5.1修复巨大BUG</h1>
-        <h1 class="title STYLE2">重大更新</h1> 
-        <h1 class="title STYLE1"></h1>
-        <h1 class="title STYLE1"></h1>	
-		<label class="label"></label> 
-		<span class="STYLE5"></span>
-        <div align="right">
-          <!-- <div class="field is-grouped">
+        <h1 class="title STYLE4">龙须雷达</h1>
+      
+        
+        
+        <!-- <div class="field is-grouped">
           <a class="button is-small">Button</a>
           <a class="button is-small">Button2</a>
         </div> -->
-          
-        </div>
-		<br>
-		<br>
+        
         <label class="label">地图选择:</label>
           <input type="radio" id="erangel" value="erangel" v-model="mapType"><label for="erangel">老图</label>
           <input type="radio" id="miramar" value="miramar" v-model="mapType"><label for="miramar">新图</label>
@@ -68,7 +57,7 @@
           
         <!-- <label class="label" v-on:dblclick="showNoItems">Item Options:</label> -->
         <label class="label">物资选择</label>
-         <!-- <input type="checkbox" id="showBack" v-model="showBack"><label for="showBack">背包　</label>
+          <input type="checkbox" id="showBack" v-model="showBack"><label for="showBack">背包　</label>
           <input type="checkbox" id="showArmor2" v-model="showArmor2"><label for="showArmor2">甲２</label>
           <input type="checkbox" id="showArmor3" v-model="showArmor3"><label for="showBack3">甲３　</label>
           <input type="checkbox" id="showHead2" v-model="showHead2"><label for="showHead2">头２</label>
@@ -112,12 +101,12 @@
           <input type="checkbox" id="showMini14" v-model="showMini14"><label for="showMini14">Ｍｉｎｉ</label>
           <input type="checkbox" id="showSKS" v-model="showSKS"><label for="showSKS">Ｓｋｓ</label>
           <input type="checkbox" id="showKar98k" v-model="showKar98k"><label for="showKar98k">９８ｋ　</label>
-          <input type="checkbox" id="showPan" v-model="showPan"><label for="showPan">平底锅</label> -->
+          <input type="checkbox" id="showPan" v-model="showPan"><label for="showPan">平底锅</label>
 
         <hr>
         <label class="label">刷新率:</label>
-          <a class="button is-small" @click="setFPS(5)">fps5</a>
-          <a class="button is-small" @click="setFPS(15)">fps15</a>
+         
+           <a class="button is-small" @click="setFPS(15)">fps15</a>
           <a class="button is-small" @click="setFPS(30)">fps30</a>
           <a class="button is-small" @click="setFPS(60)">fps60</a>
           <br><br>
